@@ -47,8 +47,8 @@ namespace RedisExample
 
             services.AddDistributedRedisCache(options =>
             {
-                options.InstanceName = "panshubeiredis";//Configuration.GetValue<string>("redis:name");
-                options.Configuration = "panshubeiredis.redis.cache.windows.net:6380,password=R+vsbuvZK6xCbuyTDFZ4b5wy+Gz4RNdKGbQDxg24Z2U=,ssl=True,abortConnect=False,allowAdmin=true";//Configuration.GetValue<string>("redis:host");
+                options.InstanceName = "pa****is";//Configuration.GetValue<string>("redis:name");
+                options.Configuration = "pan********,ssl=True,abortConnect=False,allowAdmin=true";//Configuration.GetValue<string>("redis:host");
             });
 
             services.AddSingleton<IRedisConnectionFactory, RedisConnectionFactory>();
