@@ -16,7 +16,7 @@
 
         public RedisConnectionFactory(IOptions<RedisConfiguration> redis)
         {
-            this._connection = new Lazy<ConnectionMultiplexer>(() => ConnectionMultiplexer.Connect("panshubeiredis.redis.cache.windows.net:6380,password=R+vsbuvZK6xCbuyTDFZ4b5wy+Gz4RNdKGbQDxg24Z2U=,ssl=True,abortConnect=False,allowAdmin=true"));
+            this._connection = new Lazy<ConnectionMultiplexer>(() => ConnectionMultiplexer.Connect("pa******,ssl=True,abortConnect=False,allowAdmin=true"));
         }
 
         public ConnectionMultiplexer Connection()
